@@ -1,7 +1,7 @@
-calculate = (elem) ->
-    totalW = $('#total').val()
+calculate = ->
+    totalW = $('#total').slider('getValue') #val()
     totalW = parseInt(totalW)
-    barW = $('#bar').val()
+    barW = $('#bar').slider('getValue') #val()
     barW = parseInt(barW)
     side = (totalW - barW) / 2
     console.log 'value: ' + side
@@ -45,6 +45,8 @@ calculate = (elem) ->
         $('#2').text(num2)
 
 $ ->
-    $(".slider").on("slidestop", (event, ui) ->
-        calculate($(this).siblings('input'))
+    # $(".slider").on("slidestop", (event, ui) ->
+    #     calculate($(this).siblings('input'))
+    # )
+    $('.slider').slider().on('slide', ->
     )
