@@ -9,6 +9,7 @@ calculate = function(elem) {
   side = (totalW - barW) / 2;
   console.log('value: ' + side);
   $('#sides').text(side);
+  $('.weights').text(0);
   if (side >= 45) {
     num45 = side / 45;
     num45 = Math.floor(num45);
