@@ -45,6 +45,6 @@ calculate = (elem) ->
         $('#2').text(num2)
 
 $ ->
-    $(".slider").on("slidestop", (event, ui) ->
+    $('.slider').on('slidestop', (event, ui) ->
         calculate($(this).siblings('input'))
     )
