@@ -8,8 +8,9 @@
 
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
         <link rel="stylesheet" type="text/css" href="css/slider.css" />
-<!--         <link rel="stylesheet" type="text/css" href="css/jquery.mobile.theme-1.4.2.min.css" />
-        <link rel="stylesheet" type="text/css" href="css/jquery.mobile.structure-1.4.2.min.css" />        --> 
+
+        <link rel="stylesheet" type="text/css" href="css/jquery.mobile.theme-1.4.2.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/jquery.mobile.structure-1.4.2.min.css" /> 
         <meta name="msapplication-tap-highlight" content="no" />
         <title>Barbell Calculator - What Weights to Place on Your Bar</title>
     </head>
@@ -24,9 +25,11 @@
         <div data-role="content" class="col-sm-8 col-sm-offset-2 text-center">
 
             <form>
+            <div class="ui-field-contain">
                 <div data-role="rangeslider">
                     <label for="range-4a">Total Weight (Including Bar):</label>
-                    <input class="slider" name="total" id="total" type="range" data-slider-min="25" data-slider-max="1000" data-slider-step="5" data-slider-value="135" data-slider-tooltip="hide" data-slider-orientation="horizontal"> <!--data-highlight="true" step="5" min="25" max="1000" value="135" type="range"-->
+                    <input class="slider" name="total" id="total" data-highlight="true" step="5" min="25" max="1000" value="135" type="range">
+                </div>
                 </div>
             </form>
 
@@ -53,7 +56,7 @@
         </div>
         </div>
         <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
-        <!--<script type="text/javascript" src="js/jquery.mobile-1.4.2.min.js"></script>-->
+        <script type="text/javascript" src="js/jquery.mobile-1.4.2.min.js"></script>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
