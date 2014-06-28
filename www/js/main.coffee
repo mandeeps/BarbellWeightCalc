@@ -1,8 +1,8 @@
 calculate = ->
-    totalW = $('#total').slider('getValue') #val()
-    totalW = parseInt(totalW)
-    barW = $('#bar').slider('getValue') #val()
-    barW = parseInt(barW)
+    totalW = $('#total').slider('getValue')
+    #totalW = parseInt(totalW)
+    barW = $('#bar').slider('getValue')
+    #barW = parseInt(barW)
     side = (totalW - barW) / 2
     console.log 'value: ' + side
     $('#sides').text(side)
@@ -45,8 +45,4 @@ calculate = ->
         $('#2').text(num2)
 
 $ ->
-    # $(".slider").on("slidestop", (event, ui) ->
-    #     calculate($(this).siblings('input'))
-    # )
-    $('.slider').slider().on('slide', ->
-    )
+    $('.slider').slider().on('slideStop', calculate).data('slider')

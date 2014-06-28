@@ -7,11 +7,8 @@
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, target-densitydpi=device-dpi" />
 
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-        <link rel="stylesheet" type="text/css" href="css/slider.css" />
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-slider.min.css" />
 
-        <!-- <link rel="stylesheet" type="text/css" href="css/jquery.mobile.custom.theme.min.css" />
-        <link rel="stylesheet" type="text/css" href="css/jquery.mobile.custom.structure.min.css" />  -->
-             
         <meta name="msapplication-tap-highlight" content="no" />
         <title>Barbell Calculator - What Weights to Place on Your Bar</title>
     </head>
@@ -25,27 +22,15 @@
         <div class="row">
         <div data-role="content" class="col-sm-8 col-sm-offset-2 text-center">
 
-             <form>
-                <div class="ui-field-contain">
-                <div data-role="rangeslider">
-                    <label for="range-4a">Total Weight (Including Bar):</label>
-                    <input class="slider" name="total" id="total" data-highlight="true" data-slider-step="5" data-slider-min="25" data-slider-max="1000" data-slider-value="135" type="range">
-                </div>
-                </div>
-            </form>
-
-<!--            <div class="well">
-            Filter by price interval: <b>€ 10</b> <input type="text" class="span2" value="" data-slider-min="10" data-slider-max="1000" data-slider-step="5" data-slider-value="[250,450]" id="sl2" > <b>€ 1000</b>
-          </div> -->
-
-            <form>
-                <div class="ui-field-contain">
-                    <div data-role="rangeslider">
-                        <label for="range-4a">Weight of Bar:</label>
-                        <input class="slider" name="bar" id="bar" data-highlight="true" step="5" min="25" max="45" value="45" type="range">
-                    </div>
-                </div>
-            </form>
+            <div>
+                <label for="range-4a">Total Weight (Including Bar):</label>
+                <input class="slider" name="total" id="total" data-highlight="true" data-slider-step="5" data-slider-min="25" data-slider-max="1000" data-slider-value="135" type="text">
+            </div>
+            <br/>
+            <div>
+                <label for="range-4a">Weight of Bar:</label>
+                <input class="slider" name="bar" id="bar" data-highlight="true" data-slider-step="5" data-slider-min="25" data-slider-max="45" data-slider-value="45" type="text">
+            </div>
 
             <div>Put this on each side:
                 <p></p>
@@ -61,9 +46,7 @@
         </div>
         </div>
         <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
-<!--        <script type="text/javascript" src="js/jquery.mobile.custom.min.js"></script> -->
-
-<!--        <script type="text/javascript" src="js/bootstrap-slider.js"></script> -->
+        <script type="text/javascript" src="js/bootstrap-slider.min.js"></script>
 
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
