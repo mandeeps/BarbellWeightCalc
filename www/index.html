@@ -13,23 +13,23 @@
         <title>Barbell Calculator - What Weights to Place on Your Bar</title>
     </head>
     <body>
-        <div class="app container" data-role="page" data-theme="a">
+        <div class="app container" data-theme="a">
         
-        <div data-role="header" class="header text-center">
+        <div class="header text-center">
             <h1>Oly Calc</h1>
         </div>
 
         <div class="row">
-        <div data-role="content" class="col-sm-8 col-sm-offset-2 text-center">
+        <div class="col-sm-8 col-sm-offset-2 text-center">
 
             <div>
-                <label for="range-4a">Total Weight (Including Bar):</label>
-                <input class="slider" name="total" id="total" data-highlight="true" data-slider-step="5" data-slider-min="25" data-slider-max="1000" data-slider-value="135" type="text">
+                <label for="range-4a">Total Weight (Including Bar): <span id="tVal"> 135</span></label><br/>
+                <input class="slider" name="total" id="total" data-highlight="true" data-slider-step="5" data-slider-min="25" data-slider-max="1000" data-slider-value="135" data-slider-tooltip="hide" type="text">
             </div>
             <br/>
             <div>
-                <label for="range-4a">Weight of Bar:</label>
-                <input class="slider" name="bar" id="bar" data-highlight="true" data-slider-step="5" data-slider-min="25" data-slider-max="45" data-slider-value="45" type="text">
+                <label for="range-4a">Weight of Bar: <span id="bVal"> 45</span></label><br/>
+                <input class="slider" name="bar" id="bar" data-highlight="true" data-slider-step="5" data-slider-min="25" data-slider-max="45" data-slider-value="45" data-slider-tooltip="hide" type="text">
             </div>
 
             <div>Put this on each side:

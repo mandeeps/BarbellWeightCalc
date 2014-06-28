@@ -1,12 +1,11 @@
 (function() {
-  var calculate;
+  var calculate, update;
 
   calculate = function() {
     var barW, num10, num2, num25, num35, num45, num5, side, totalW;
     totalW = $('#total').slider('getValue');
     barW = $('#bar').slider('getValue');
     side = (totalW - barW) / 2;
-    console.log('value: ' + side);
     $('#sides').text(side);
     $('.weights').text(0);
     if (side >= 45) {
@@ -46,8 +45,14 @@
     }
   };
 
+  update = function() {
+    $('#tVal').text($('#total').slider('getValue'));
+    return $('#bVal').text($('#bar').slider('getValue'));
+  };
+
   $(function() {
-    return $('.slider').slider().on('slideStop', calculate).data('slider');
+    $('.slider').slider().on('slideStop', calculate).data('slider');
+    return $('.slider').on('slide', update);
   });
 
 }).call(this);

@@ -1,12 +1,9 @@
 calculate = ->
     totalW = $('#total').slider('getValue')
-    #totalW = parseInt(totalW)
     barW = $('#bar').slider('getValue')
-    #barW = parseInt(barW)
     side = (totalW - barW) / 2
-    console.log 'value: ' + side
+    #console.log 'value: ' + side
     $('#sides').text(side)
-
     $('.weights').text(0)
 
     if side >= 45
@@ -44,5 +41,10 @@ calculate = ->
         num2 = Math.floor(num2)
         $('#2').text(num2)
 
+update = ->
+    $('#tVal').text($('#total').slider('getValue'))
+    $('#bVal').text($('#bar').slider('getValue'))
+
 $ ->
     $('.slider').slider().on('slideStop', calculate).data('slider')
+    $('.slider').on('slide', update)
