@@ -1,58 +1,67 @@
 <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--<meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, target-densitydpi=device-dpi" /> -->
 
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="format-detection" content="telephone=no" />
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, target-densitydpi=device-dpi" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-slider.min.css" />
 
-        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-        <link rel="stylesheet" type="text/css" href="css/bootstrap-slider.min.css" />
+    <meta name="msapplication-tap-highlight" content="no" />
 
-        <meta name="msapplication-tap-highlight" content="no" />
-        <title>Barbell Calculator - What Weights to Place on Your Bar</title>
-    </head>
-    <body>
-        <div class="app container" data-theme="a">
-        
-        <div class="header text-center">
-            <h1>Oly Calc</h1>
+    <style>
+      html, body {height: 100%;}
+    </style>
+
+    <title>Barbell Calculator - What Weights to Place on Your Bar</title>
+  </head>
+  <body>
+    <div class="app container-fluid">
+      <div class="header text-center">
+        <h1>Oly Calc</h1>
+      </div>
+
+      <div class="row">
+        <div class="text-center">
+          <div>
+            <label for="range-4a">Total Weight (Including Bar): <span id="tVal"> 135</span></label><br/>
+            <input class="slider" name="total" id="total" data-highlight="true" data-slider-step="5" data-slider-min="25" data-slider-max="1000" data-slider-value="135" data-slider-tooltip="hide" type="text">
+          </div>
+          <br/>
+          <div>
+            <label for="range-4a">Weight of Bar: <span id="bVal"> 45</span></label><br/>
+            <input class="slider" name="bar" id="bar" data-highlight="true" data-slider-step="5" data-slider-min="25" data-slider-max="45" data-slider-value="45" data-slider-tooltip="hide" type="text">
+          </div>
         </div>
+      </div>
 
-        <div class="row">
-        <div class="col-sm-8 col-sm-offset-2 text-center">
-
-            <div>
-                <label for="range-4a">Total Weight (Including Bar): <span id="tVal"> 135</span></label><br/>
-                <input class="slider" name="total" id="total" data-highlight="true" data-slider-step="5" data-slider-min="25" data-slider-max="1000" data-slider-value="135" data-slider-tooltip="hide" type="text">
-            </div>
-            <br/>
-            <div>
-                <label for="range-4a">Weight of Bar: <span id="bVal"> 45</span></label><br/>
-                <input class="slider" name="bar" id="bar" data-highlight="true" data-slider-step="5" data-slider-min="25" data-slider-max="45" data-slider-value="45" data-slider-tooltip="hide" type="text">
-            </div>
-
-            <div>Put this on each side:
-                <p></p>
-                <span id="sides">45</span> Pounds <br>
-                <span id="45"  class="weights">1</span> x 45 <br>
-                <span id="35"  class="weights">0</span> x 35 <br>
-                <span id="25"  class="weights">0</span> x 25 <br>
-                <span id="10"  class="weights">0</span> x 10 <br>
-                <span id="5"  class="weights">0</span> x 5 <br>
-                <span id="2"  class="weights">0</span> x 2.5 <br>
-            </div>
+      <br/>
+      <div class="row">
+        <div class="text-center">
+          <div>
+            <p>Put this on each side: <span id="sides">45</span> Pounds </p> 
+            <span id="45"  class="weights">1</span> x 45 <br/>
+            <span id="35"  class="weights">0</span> x 35 <br/>
+            <span id="25"  class="weights">0</span> x 25 <br/>
+            <span id="10"  class="weights">0</span> x 10 <br/>
+            <span id="5"  class="weights">0</span> x 5 <br/>
+            <span id="2"  class="weights">0</span> x 2.5 <br/>
+          </div>
         </div>
-        </div>
-        </div>
-        <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
-        <script type="text/javascript" src="js/bootstrap-slider.min.js"></script>
+      </div>
 
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-        <script type="text/javascript">
-            app.initialize();
-        </script>
-        <script type="text/javascript" src="js/main.js"></script>
-    </body>
+    </div>
+
+    <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap-slider.min.js"></script>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+      app.initialize();
+    </script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
 </html>
