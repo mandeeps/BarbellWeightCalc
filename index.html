@@ -10,13 +10,17 @@
         <link rel="stylesheet" type="text/css" href="css/jquery.mobile.theme-1.4.2.min.css" />
         <link rel="stylesheet" type="text/css" href="css/jquery.mobile.structure-1.4.2.min.css" />      
         <meta name="msapplication-tap-highlight" content="no" />
+        <style>
+          body {font-size:120%;}
+          .header {font-size:80%;}
+        </style>
         <title>Barbell Calculator - What Weights to Place on Your Bar</title>
     </head>
     <body>
         <div class="app container" data-role="page" data-theme="a">
         
         <div data-role="header" class="header text-center">
-            <h1>Oly Calc</h1>
+            <h1>Barbell Calculator</h1>
         </div>
 
         <div class="row">
@@ -40,9 +44,9 @@
                 </div>
             </form>
 
-            <div>Put this on each side:
-                <p></p>
-                <span id="sides">45</span> Pounds <br>
+            <div>
+                <p><label>Put this on each side:</label>
+                <span id="sides">45</span> Pounds</p>
                 <span id="45"  class="weights">1</span> x 45 <br>
                 <span id="35"  class="weights">0</span> x 35 <br>
                 <span id="25"  class="weights">0</span> x 25 <br>
