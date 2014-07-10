@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="io.cordova.hellocordova" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>HelloCordova</name>
+<widget id="com.mandeepshergill.barbellcalculator" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Barbell Calculator</name>
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+        A calculator for weightlifting that tells you what plates to place on each side of a barbell
     </description>
-    <author email="dev@cordova.apache.org" href="http://cordova.io">
-        Apache Cordova Team
+    <author email="mandeep@shergillgames.com" href="http://mandeepshergill.com">
+        Mandeep Shergill
     </author>
     <content src="index.html" />
     <access origin="*" />
