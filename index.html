@@ -1,11 +1,36 @@
 <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="css/chui-android-3.6.1.min.css" media="screen"/>
+    <meta name="msapplication-tap-highlight" content="no" />
+    
+    <style>
+      html, body {height: 100%;}
+      input[type='range'] {width:99%;}
+    </style>
+    
+    <title>Barbell Calculator - What Weights to Place on Your Bar</title>
+  </head>
 
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="format-detection" content="telephone=no" />
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, target-densitydpi=device-dpi" />
+  <body>
+    <div class="app container-fluid">
+    <nav>
+        <h1 class="text-center">Barbell Calculator</h1>
+    </nav>
+      <br><br>
+      <div class="row">
+        <div class="text-center">
+          <ul class="list" ui-li-order="stacked" ui-kind="grouped">
+            <li>
+              <label for="range-4a">Total Weight (Including Bar): <span id="tVal"> 135</span></label>
+              <input id="total" step="5" min="45" max="500" value="135" type="range">
+            </li>
+          </ul>
 
+<<<<<<< HEAD:index.html
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
         <link rel="stylesheet" type="text/css" href="css/jquery.mobile.theme-1.4.2.min.css" />
         <link rel="stylesheet" type="text/css" href="css/jquery.mobile.structure-1.4.2.min.css" />      
@@ -21,8 +46,18 @@
         
         <div data-role="header" class="header text-center">
             <h1>Barbell Calculator</h1>
+=======
+          <ul class="list" ui-li-order="stacked" ui-kind="grouped">
+            <li>
+              <label for="range-4a">Weight of Bar: <span id="bVal"> 45</span></label><br/>
+              <input id="bar" step="5" min="25" max="45" value="45" type="range">
+            </li>
+          </ul>
+>>>>>>> e8188c0e45fddb39e8b82dd0ee22dbd8524b112e:www/index.html
         </div>
+      </div>
 
+<<<<<<< HEAD:index.html
         <div class="row">
         <div data-role="content" class="col-sm-8 col-sm-offset-2 text-center">
 
@@ -66,4 +101,32 @@
         </script>
         <script type="text/javascript" src="js/main.js"></script>
     </body>
+=======
+      <div class="row">
+        <div class="text-center">
+          <div>
+            <h4>Put this on each side: <span id="sides">45</span> Pounds </h4> 
+            <h4><span id="45"  class="weights">1</span> x 45 </h4>
+            <h4><span id="35"  class="weights">0</span> x 35 </h4>
+            <h4><span id="25"  class="weights">0</span> x 25 </h4>
+            <h4><span id="10"  class="weights">0</span> x 10 </h4>
+            <h4><span id="5"  class="weights">0</span> x 5 </h4>
+            <h4><span id="2"  class="weights">0</span> x 2.5 </h4>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="js/chocolatechip-3.6.1.min.js"></script>
+    <script src="js/chui-3.6.1.min.js"></script>
+    <script src="js/fastclick.min.js"></script>
+    <script src="cordova.js"></script>
+    <script src="js/index.js"></script>
+    <script>
+      app.initialize();
+    </script>
+    <script src="js/main.js"></script>
+  </body>
+>>>>>>> e8188c0e45fddb39e8b82dd0ee22dbd8524b112e:www/index.html
 </html>
