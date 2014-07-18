@@ -11,5 +11,5 @@
     <icon src="www/img/icon_48.png" width="48" height="48" />
     <icon src="www/img/icon_36.png" width="36" height="36" />
     <content src="index.html" />
-    <access origin="*" />
+    <access />
 </widget>
