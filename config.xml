@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.mandeepshergill.barbellcalculator" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Barbell Calculator</name>
+    <description>
+        A calculator for weightlifting that tells you what plates to place on each side of a barbell
+    </description>
+    <author email="mandeep@shergillgames.com" href="http://mandeepshergill.com">
+        Mandeep Shergill
+    </author>
+    <icon src="www/img/icon_72.png" width="72" height="72" />
+    <icon src="www/img/icon_48.png" width="48" height="48" />
+    <icon src="www/img/icon_36.png" width="36" height="36" />
+    <content src="index.html" />
+    <access />
+</widget>
