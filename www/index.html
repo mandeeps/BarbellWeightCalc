@@ -15,12 +15,13 @@
     <title>Barbell Calculator - What Weights to Place on Your Bar</title>
   </head>
 
-  <body>
+  <body onload="onLoad()" onresize="onResize()">
     <div class="app container-fluid">
-    <nav>
+      <nav>
         <h1 class="text-center">Barbell Calculator</h1>
-    </nav>
+      </nav>
       <br><br>
+
       <div class="row">
         <div class="text-center">
           <ul class="list" ui-li-order="stacked" ui-kind="grouped">
@@ -54,15 +55,11 @@
       </div>
 
     </div>
-
+    <script src="cordova.js"></script>
+    <script src="js/cordovaAdmob.js"></script>
     <script src="js/chocolatechip-3.6.1.min.js"></script>
     <script src="js/chui-3.6.1.min.js"></script>
     <script src="js/fastclick.min.js"></script>
-    <script src="cordova.js"></script>
-    <script src="js/index.js"></script>
-    <script>
-      app.initialize();
-    </script>
     <script src="js/main.js"></script>
   </body>
 </html>
